@@ -16,6 +16,10 @@ gem 'sprockets', '< 4'
 gem 'sassc-rails'
 gem 'webpacker', '~> 4.0'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
+gem "jw_git", github: "jelaniwoods-FurtherLearning/jw-baby-git"
+gem 'sinatra'
+gem "git"
+gem "diffy"
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -32,7 +36,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'sqlite3', '~> 1.4'
   gem 'table_print'
-  gem 'web_git', github: 'firstdraft/web_git'
+  # gem 'web_git', github: 'firstdraft/web_git'
 end
 
 group :development do
