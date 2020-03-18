@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/jelaniwoods-FurtherLearning/jw-baby-git.git
-  revision: 758e2ebba3db432e8ca497e724e4149e60ac1000
+  revision: 1374c880401ab455d0c6f22b2e64f7fa14bc1132
   specs:
     jw_git (0.1.1)
 
