@@ -22,9 +22,9 @@ GIT
 
 GIT
   remote: https://github.com/jelaniwoods-FurtherLearning/jw-baby-git.git
-  revision: 66d2323462aa34e17040b7c565024202ad8a458a
+  revision: 758e2ebba3db432e8ca497e724e4149e60ac1000
   specs:
-    jw_git (0.1.0)
+    jw_git (0.1.1)
 
 GEM
   remote: https://rubygems.org/
