@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/jelaniwoods-FurtherLearning/jw_git.git
-  revision: e63d2cb82c1755c3d408a724385aa42853cc3a32
+  revision: 8ab9daf0782d2bb4e720fbc72597c9eca8a4bd63
   specs:
     jw_git (0.1.1)
 

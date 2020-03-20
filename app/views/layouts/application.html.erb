@@ -13,9 +13,14 @@
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   </head>
 
   <body>
+   <a href="/git/checkout" class="btn btn-primary btn-sm"> <span><i class="fad fa-repeat"></i></span>  <%#= branch %></a>
+
+                    <a href="/git/delete" class="btn btn-warning btn-sm"> <span><i class="far fa-trash-alt"></i></span> <%#= branch %></a>
+                  
     <%= yield %>
   </body>
 </html>
