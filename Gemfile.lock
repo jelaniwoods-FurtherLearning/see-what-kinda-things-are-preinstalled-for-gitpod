@@ -21,8 +21,8 @@ GIT
     grade_runner (0.0.3.pre.3)
 
 GIT
-  remote: https://github.com/jelaniwoods-FurtherLearning/jw-baby-git.git
-  revision: 1374c880401ab455d0c6f22b2e64f7fa14bc1132
+  remote: https://github.com/jelaniwoods-FurtherLearning/jw_git.git
+  revision: e63d2cb82c1755c3d408a724385aa42853cc3a32
   specs:
     jw_git (0.1.1)
 
@@ -421,6 +421,7 @@ DEPENDENCIES
   puma (>= 3.12.3)
   rails (~> 6.0.0)
   rails_12factor
+  ransack
   rspec-html-matchers
   rspec-rails
   sassc-rails
