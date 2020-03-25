@@ -1,7 +1,14 @@
 class ApplicationController < ActionController::Base
-  before_action(:load_current_user)
+  # before_action(:load_current_user)
   
   # before_action(:force_user_sign_in)
+
+  def index
+    @q = Event.ransack(params[:q])
+    @events = @q.result
+
+    render "events/index"
+  end
   
   def load_current_user
     the_id = session.fetch(:user_id)

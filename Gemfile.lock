@@ -20,9 +20,8 @@ GIT
   specs:
     grade_runner (0.0.3.pre.3)
 
-GIT
-  remote: https://github.com/jelaniwoods-FurtherLearning/jw_git.git
-  revision: 8ab9daf0782d2bb4e720fbc72597c9eca8a4bd63
+PATH
+  remote: ../jw_git
   specs:
     jw_git (0.1.1)
 

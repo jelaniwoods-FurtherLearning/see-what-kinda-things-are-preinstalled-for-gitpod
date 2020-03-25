@@ -1,0 +1,26 @@
+<%= search_form_for @q do |f| %>
+  <p class="lead">Narrow results:</p>
+
+  <div class="form-group">
+    <%= f.label :day_cont, "Title containing" %>
+    <%= f.text_field :day_cont, :class => "form-control", :placeholder => "Enter a few characters" %>
+  </div>
+
+  <% Event.all.pluck(:day).uniq.each do |day| %>
+  <%# Event.all.each do |day| %>
+    <label>
+      <%= check_box_tag('q[day_eq_any][]', day, (true if @q.day_eq_any.try(:include?, day))) %>
+      <%= day %>
+    </label>
+  <% end %>
+  <%= f.submit :class => "btn btn-primary btn-block" %>
+  
+  <a href="/events" class="btn btn-default btn-block">Clear filters</a>
+<% end %>
+
+<% @events.each do |event| %>
+  <div>
+    <%= event.id %> ||| <br>
+    <%= event.day %>
+  </div>
+<% end %>

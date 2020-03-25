@@ -3,6 +3,23 @@ class PhotosController < ApplicationController
     # @photos = Photo.all.order({ :created_at => :desc })
     @q = Photo.ransack(params[:q])
     @photos = @q.result(:distinct => true).includes(:user)
+
+    # id = @photos.sample.id
+    id = params.fetch("input_form_id", nil)
+    p session.fetch(:uudh).nil?
+    if session[:link_id] == nil
+      p session[:link_id]
+      puts "-------------"
+      session[:link_id] = Array.new
+      p session[:link_id]
+      puts "=========="
+      session[:link_id].push(id)
+      p session[:link_id]
+    else
+      session[:link_id].push(id)
+      p session[:link_id]
+      puts "***************"
+    end
     render({ :template => "photos/index.html.erb" })
   end
 

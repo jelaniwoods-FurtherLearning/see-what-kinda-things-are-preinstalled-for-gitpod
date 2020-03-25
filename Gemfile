@@ -15,8 +15,10 @@ gem 'rails', '~> 6.0.0'
 gem 'sprockets', '< 4'
 gem 'sassc-rails'
 gem 'webpacker', '~> 4.0'
+gem "ransack"
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
-gem "jw_git", github: "jelaniwoods-FurtherLearning/jw_git"
+# gem "jw_git", github: "jelaniwoods-FurtherLearning/jw_git"
+gem "jw_git", path: "../jw_git"
 gem 'sinatra'
 gem "git"
 gem "ransack"
