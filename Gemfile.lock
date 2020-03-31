@@ -21,9 +21,14 @@ GIT
     grade_runner (0.0.3.pre.3)
 
 PATH
-  remote: ../jw_git
+  remote: ../../firstdraft/web_git
   specs:
-    jw_git (0.1.1)
+    web_git (0.1.0)
+      actionview
+      diffy
+      git
+      sinatra
+      tzinfo-data
 
 GEM
   remote: https://rubygems.org/
@@ -362,6 +367,8 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2019.3)
+      tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
@@ -410,7 +417,6 @@ DEPENDENCIES
   grade_runner!
   http
   jbuilder (~> 2.7)
-  jw_git!
   letter_opener
   listen (>= 3.0.5, < 3.2)
   meta_request
@@ -431,6 +437,7 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   table_print
   web-console (>= 3.3.0)
+  web_git!
   webmock
   webpacker (~> 4.0)
 
