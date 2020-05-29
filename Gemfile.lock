@@ -20,15 +20,24 @@ GIT
   specs:
     grade_runner (0.0.3.pre.3)
 
-PATH
-  remote: ../../firstdraft/web_git
+GIT
+  remote: https://github.com/firstdraft/web_git.git
+  revision: 5b952b270ef2bc91c89313b6fa4ae456efa37b8b
   specs:
-    web_git (0.1.0)
-      actionview
+    web_git (0.0.4)
       diffy
-      git
-      sinatra
+      git_clone_url
+      jquery-rails
+      octicons_helper
+      tether-rails
+      turbolinks (~> 5)
       tzinfo-data
+      yard (>= 0.9.20)
+
+PATH
+  remote: ../../firstdraft/appdev_support
+  specs:
+    appdev_support (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -168,6 +177,8 @@ GEM
     formtastic_i18n (0.6.0)
     git (1.6.0)
       rchardet (~> 1.8)
+    git_clone_url (2.0.0)
+      uri-ssh_git (>= 2.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     has_scope (0.7.2)
@@ -238,6 +249,11 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
+    octicons (9.6.0)
+      nokogiri (>= 1.6.3.1)
+    octicons_helper (9.6.0)
+      octicons (= 9.6.0)
+      rails
     orm_adapter (0.5.0)
     pg (1.1.4)
     polyamorous (2.3.0)
@@ -362,16 +378,22 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.4.1)
     table_print (1.5.6)
+    tether-rails (1.4.0)
+      rails (>= 3.1)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
+    turbolinks (5.2.1)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2019.3)
+    tzinfo-data (1.2020.1)
       tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
+    uri-ssh_git (2.0.0)
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (4.0.1)
@@ -392,6 +414,7 @@ GEM
     websocket-extensions (0.1.4)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yard (0.9.25)
     zeitwerk (2.2.2)
 
 PLATFORMS
@@ -400,6 +423,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin (= 2.2.0)
   annotate (< 3.0.0)
+  appdev_support!
   awesome_print
   bcrypt
   better_errors

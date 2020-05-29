@@ -18,7 +18,8 @@ gem 'webpacker', '~> 4.0'
 # gem "ransack"
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 # gem "jw_git", github: "jelaniwoods-FurtherLearning/jw_git"
-gem "web_git", path: "../../firstdraft/web_git"
+# gem "web_git", path: "../../firstdraft/web_git"
+gem "appdev_support", path: "../../firstdraft/appdev_support"
 gem 'sinatra'
 gem "git"
 gem "ransack"
@@ -39,7 +40,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'sqlite3', '~> 1.4'
   gem 'table_print'
-  # gem 'web_git', github: 'firstdraft/web_git'
+  gem 'web_git', github: 'firstdraft/web_git'
 end
 
 group :development do
@@ -50,7 +51,7 @@ group :development do
   gem 'letter_opener'
   gem 'meta_request'
 end
-
+  
 group :test do
   gem 'capybara'
   gem 'factory_bot_rails'
